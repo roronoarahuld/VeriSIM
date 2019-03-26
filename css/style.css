@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a, a:hover, a:focus, a:visited{text-decoration: none;}
+input, input:focus, select, select:hover, select:focus, select:visited, select:active{border: none;outline: none; box-shadow: none !important;}
+@font-face{
+	src: url("../fonts/Montserrat-Regular.ttf");
+	font-family: Monts-reg;
+}
+@font-face{
+	src: url("../fonts/Montserrat-Bold.ttf");
+	font-family: Monts-bld;
+}
+/*----------------------------------------------------------Picture Presentation-----------------------------------------------------------------*/
+.picture-presentation{
+	background-color: #034078;
+	height: 100vh;
+}
+/*----------------------------------------------------------Sign In/ Sign Up-----------------------------------------------------------------*/
+.account-div{padding-top: 150px;}
+.sign-up-div{display: none;}
+.account-div .sign-in-div, .account-div .sign-up-div{padding: 0 20px;}
+.account-div span{
+	font: 40px/74px Monts-reg;
+	color: #034078;
+	display: block;
+}
+.account-div h4{
+	font: 51px/55px Monts-bld;
+	color: #034078;
+}
+.account-div form{padding: 0 0 40px;}
+.account-div form a{
+	display: inline-block;
+	padding: 35px 0 30px;
+	font: 18px/22px Monts-reg;
+	color: #00a8e8;
+}
+.account-div form .input-group{padding: 60px 0 0;}
+.account-div form .input-group input{
+	width: 40%;
+	border: none;
+	border-bottom: 1px solid #034078;
+	color: #034078;
+	padding: 8px;
+	font: 19px/23px Monts-reg;
+	border-radius: 0px;
+	background-color: #fff;
+    background: linear-gradient(to bottom, #fff 75%, #034078 75%);
+    background-size: 300% 400%;
+    background-position: top;
+    transition: 0.5s ease;
+}
+.account-div .sign-up-div form .input-group input{
+	width: 100%;
+}
+.account-div form .input-group input::placeholder{
+	color: #034078;
+  	opacity: 1;
+}
+.account-div form .input-group input:focus{
+	box-shadow: none;
+	background-position: bottom;
+	color: #fff;
+	border-bottom: 1px solid #034078;
+}
+.account-div form .input-group input:focus::placeholder {
+  color: white;
+  opacity: 1;
+  transition: 0.8s ease;
+}
+.account-div button{
+	display: block;
+	padding: 12px 80px;
+	font: 18px/22px Monts-reg;
+	background-color: #034078;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+.account-div a{
+	display: inline-block;
+	padding: 0 0 30px;
+	font: 18px/22px Monts-reg;
+	color: #00a8e8;
+}
+.account-div .sign-up-div select{
+	margin: 60px 0 0;
+	border: 0;
+	border-radius: 0px;
+	border-bottom: 1px solid #034078;
+	font: 18px/22px Monts-reg;
+	color: #034078;
+}
+.account-div .sign-up-div button{margin-top: 45px;}
+/*----------------------------------------------------------Introduction-----------------------------------------------------------------*/
+header{
+	background-color: #034078;
+	padding: 15px;
+}
+header h6{
+	font: 45px/49px Monts-bld;
+	color: #fff;
+}
+.introduction-sect{padding-top: 20px; padding-bottom: 20px;}
+.introduction-sect h5{
+	font: 35px/39px Monts-reg;
+	color: #034078;
+	text-align: center;
+}
+.intro{padding: 15px 40px;}
+.replace-div{
+	background-color: #eee;
+	height: 750px;
+}
+footer{
+	background-color: #00171f;
+	padding: 15px;
+}
+footer h6{
+	font: 45px/49px Monts-reg;
+	color: #fff;
+}

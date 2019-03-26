@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Sign In/ Sign Up - VeriSIM</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 picture-presentation">
+				<!-- Pictural Presentation -->
+			</div>	
+			<div class="col-sm-6 account-div">
+				<!-- Sign In -->
+				<div class="sign-in-div">
+					<span>Sign In</span>
+					<h4>VeriSIM Learning Environment</h4>
+					<form action="">
+						<div class="input-group">
+							<input type="text" name="username" placeholder="Username">
+						</div>
+						<div class="input-group">
+							<input type="password" name="password" placeholder="Password">
+						</div>
+						<a href="">Forgot Password?</a>
+						<button type="submit">LOGIN</button>
+					</form>
+					<a href="javascript:void(0)" class="signin_a">Don't have an account? Sign up</a>
+				</div>
+
+				<!-- Sign Up -->
+				<div class="sign-up-div">
+					<span>Sign In</span>
+					<h4>VeriSIM Learning Environment</h4>
+					<form action="">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="input-group">
+									<input type="text" name="firstname" placeholder="Firstname">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="input-group">
+									<input type="text" name="lastname" placeholder="Lastname">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="input-group">
+									<input type="text" name="username" placeholder="Username">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="input-group">
+									<input type="password" name="password" placeholder="Password">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+						      <select class="form-control" id="gender-role">
+						        <option>Select the gender</option>
+						        <option>Male</option>
+						        <option>Female</option>
+						      </select>
+						    </div>
+						</div>
+						<button type="submit">SIGN UP</button>
+					</form>
+					<a href="javascript:void(0)" class="signup_a">Already have an account? Sign in</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/umd/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".signin_a").click(function () {
+			// When clicked on Don't have an account link
+			$(".sign-in-div").hide();
+			$(".sign-up-div").show();
+		});
+
+		// When clicked on Have an account link
+		$(".signup_a").click(function () {
+			$(".sign-in-div").show();
+			$(".sign-up-div").hide();
+		});
+	});
+</script>
+</html>
